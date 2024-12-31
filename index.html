@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenvolvedor | Felipe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">    
+    <style>
+        @font-face {
+            font-family: 'europa';
+            src: url(fonts/europa-regular-webfont.ttf);
+        }
+
+        @font-face {
+            font-family: 'eurostile';
+            src: url(fonts/eurostile.TTF);
+        }
+
+
+        html, body{
+            scroll-behavior: smooth;
+            font-family: 'Source Sans 3';
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #FAFAFA;
+        }
+
+
+        nav{
+            position: fixed;
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            z-index: 1000; 
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ffffff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 15px 30px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav img{
+            height: 90px;
+            width: auto;
+            margin-left: 35px;
+        }
+
+        nav a{
+            font-family: 'electrolize', sans-serif;
+            font-weight: bolder;
+            color: #333;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        nav a h1{
+            font-family: 'Orbitron', sans-serif;
+            color: #333;
+            font-weight: normal;
+            font-size: 1.6rem;
+        }
+
+        nav .links{
+            display: flex;
+            gap: 50px;
+        }
+
+        nav p a{
+            font-family: 'electrolize', sans-serif;
+            font-weight: normal;
+            color: black;
+            text-decoration: none;
+            position: relative;
+            margin-right: 90px;
+            font-size: 1.2rem;
+        }
+
+        nav p:hover{
+            transform: scale(1.03);
+            transition: transform 0.3s ease;
+            color: #407BFF;
+        }
+
+        nav p a::after{
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -0.09rem;
+            width: 0;
+            height: 2px;
+            background-color: #407BFF;
+            transition: width 0.3s ease;
+        }
+
+        p a:hover::after {
+            width: 100%;
+        }
+
+        main{
+            background-color: #FAFAFA;
+            margin-top: 80px;
+            height: 600px;
+            color: black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px 90px;
+        }
+
+        .texto{
+            flex: 1;
+            font-family: 'Source Sans 3', sans-serif;
+            font-weight: bolder;
+            margin-bottom: 100px;
+            
+        }
+
+        .mainimg{
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .mainimg img{
+            width: 100%; 
+            max-width: 450px;
+            height: auto;
+            margin-right: 25px;
+            margin-bottom: 50px;
+        }
+
+        .bem-vindo{
+            font-weight: bolder;
+            font-family: 'electrolize', sans-serif;
+            font-size: 3.9rem;
+            color: #407BFF;
+        }
+
+        .texto p{
+            font-size: 1.3rem;
+            font-weight: normal;
+        }
+
+        .mini-text1{
+            width: 200px;
+        }
+
+        .mini-text1 p{
+            font-weight: bolder;
+            color: #407BFF;
+        }
+
+        .mini-text2{
+            width: 200px;
+        }
+
+        .mini-text2 p{
+            font-weight: bolder;
+            color: #407BFF;
+        }
+
+        section{
+            height: 850px;
+            width: auto;
+            background-color: #ffffff;
+            color: black ;
+        }
+
+        section span h1{
+            font-family: 'Source Sans 3', sans-serif;
+            font-weight: bolder;
+            font-size: 2.4rem;
+            text-align: center;
+            padding-top: 150px;
+            color: #000000;
+        }
+
+        .sm{
+            font-family: 'europa', sans-serif;
+            font-weight: bolder;
+            color: black ;
+            display: flex;
+            position: relative;
+            top: 9%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 150px;
+            width: 450px;
+        }
+
+        .sm p{
+            font-weight: normal;
+            font-size: 1.2rem;
+            font-family: 'Source Sans 3', sans-serif;
+        }
+
+        aside{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .historia{
+            width: 600px;
+            height: auto;
+            
+        }
+
+        .historia h1{
+            color: #000000;
+            font-size: 2rem;
+            font-weight: bolder;
+            font-family: "Source Sans 3", sans-serif;
+        }
+
+        .historia p{
+            font-weight: normal;
+            font-size: 1.15rem;
+        }
+
+        .skills{
+            width: 500px;
+            height: auto;
+        }
+
+        .skills h1{
+            color: #000000;
+            font-size: 2rem;
+            font-weight: bolder;
+            font-family: "Source Sans 3", sans-serif;
+        }
+
+        .skills ul{
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .skills li{
+         
+            font-size: 1.2rem;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .tec_lista{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .tec{
+            font-family: 'electrolize', sans-serif;
+            font-size: 1.1rem;
+            background-color: #004aaa;  
+            padding: 10px 20px;
+            border-radius: 5px;
+            flex-shrink: 0; 
+        }
+
+        .tec:hover{
+            cursor: default;
+            transition: transform 0.3s ease;
+            color: whitesmoke;
+            transform: scale(1.05);
+        }
+
+        .projetos{
+            height: 850px;
+            width: auto;
+            background-color: #FAFAFA;
+            font-size: 1.2rem;
+        }
+
+        .sobprojeto{
+            position: relative;
+            top: 25%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            width: 500px;
+        }
+
+
+        .projetos h1{
+            font-family: 'Source Sans 3', sans-serif;
+            font-weight: bolder;
+            font-size: 2.4rem;
+            color: black;
+        }
+
+        .projetos p{
+            text-align: center;
+        }
+
+        .projeto-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 300px;
+            margin-top: 250px;
+            margin-left: 50px;
+            transition: transform 0.3s ease;
+        }
+
+        .projeto-card:hover {
+            transform: scale(1.05);
+        }
+
+        .projeto-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .projeto-card .conteudo {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .projeto-card .conteudo h2 {
+            font-size: 1.6rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .projeto-card .conteudo p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        .projetos-container{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .conteudo a{
+            background-color: #0033ffa0;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: inline-block;
+            transition: background-color scale 0.3s ease;
+            transition: transform 0.3s ease;
+        }
+
+        .conteudo a:hover{
+            transform: scale(1.05);
+        }
+
+        .ever_projeto{
+            display: flex;
+            padding-bottom: 100px;
+        }
+
+        .contato{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 350px;
+            background-color: #FFFFFF;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .form_box{
+            display: flex;
+            flex-direction: column;
+            background-color: #ffffff;
+            border-radius: 8px;
+            width: 500px;
+        }
+
+        .form_box .title{
+            font-family: 'electrolize', sans-serif;
+            padding: 24px 32px;
+            font-size: 24px;
+            border-bottom: thin solid #ccc;
+        }
+
+        .form_box form{
+            display: flex;
+            align-items: start;
+            flex-wrap: wrap;
+            padding: 32px;
+        }
+
+        .form_box input,
+        .form_box textarea{
+            width: calc(45% - 8px);
+            height: 48px;
+            border-radius: 8px;
+            border: thin solid #999;
+            padding-left: 16px;
+            margin-bottom: 16px;
+            font-size: 16px;
+
+        }
+
+        .form_box input:first-child{
+            margin-right: 16px;
+            
+        }
+
+        .form_box input[name=subject]{
+            width: 100%;
+        }  
+
+        .form_box textarea{
+            width: 100%;
+            height: 180px;
+            padding: 16px;
+        }
+
+        .form_box button{
+            display: block;
+            border: none;
+            outline: none;
+            width: 180px;
+            height: 48px;
+            border-radius: 8px;
+            background-color: #5F7FFF;
+            color: #fff;
+            font-size: 16px;
+            font-weight: bolder;
+            cursor: pointer;
+            transition: transform 0.4s ease;
+            transform: color 0.3s ease;
+        }
+
+        .form_box button:hover{
+            transform: scale(1.03);
+            background-color: #465dbb;
+        }
+
+        textarea{
+            font-family: 'europa';
+        }
+
+        footer{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+            height: 250px;
+            width: 100%;
+            color: white;
+        }
+
+        footer h2{
+            font-family: 'Source Sans 3', sans-serif;
+            font-weight: normal;
+        }
+
+        footer img{
+            height: 50px;
+            width: 50px;
+            background-color: #ffffff;
+            border-radius: 50px;
+        }
+
+        footer img:hover{
+            transition: transform 0.5s ease;
+            transform: scale(1.05);
+        }
+
+        .nome{
+            margin-right: 150px;
+        }
+
+        .social{
+            margin-left: 150px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#"><h1>Hello, World!</h1></a>
+            <div class="links">
+                <p><a href="#rollsobremim">SOBRE</a></p>
+                <p><a href="#rollprojetos">PROJETOS</a></p>
+                <p><a href="#rollcontato">CONTATO</a></p>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="texto">
+            <h1 class="bem-vindo">Desenvolvedor <br> Back-end <span style="color: black;">.</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur temporibus vel iste quidem eaque molestiae totam et nisi velit.</p>
+            <div class="mini-text1">
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+        </div>
+        <div class="mainimg">
+            <img src="img/mainimg.png" alt="" loading="lazy">
+        </div>
+    </main>
+    <section id="rollsobremim">
+        <span><h1>SOBRE MIM</h1></span>
+        <hr style="width: 3%; border: 0; border-top: 9px solid #FAB20C; border-radius: 10px;">
+        <div class="sm">
+            <p>Aqui você encontrará informações sobre mim,oque faço e minhas competências tecnológicas.</p>
+        </div>
+        <aside>
+            <div class="historia">
+                <h1>ME CONHEÇA</h1>
+                <div class="hi">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea modi veniam ipsum molestiae sed aliquam, quam assumenda dolorum esse ipsam voluptates voluptate qui adipisci ullam minus illum cum aperiam dolores!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora molestiae porro assumenda unde incidunt dolores laborum inventore, officia est cum consequuntur odit iure, enim fugiat ducimus vel obcaecati recusandae id!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quas accusantium, iure quibusdam laboriosam molestias aliquam! Fugit, et dolorum a, earum eligendi itaque cum molestias, officiis nemo accusantium neque eum!</p>
+                </div>
+            </div>
+            <div class="skills">
+                <h1>TECNOLOGIAS</h1>
+                <ul class="tec_lista">
+                    <li class="tec">Python</li>
+                    <li class="tec">Scikit-Learn</li>
+                    <li class="tec">HTML5</li>
+                    <li class="tec">CSS3</li>
+                </ul>
+            </div>
+        </aside>
+    </section>
+    <article class="projetos" id="rollprojetos">
+        <div class="sobprojeto">
+            <h1>PROJETOS</h1>
+            <hr style="width: 10%; border: 0; border-top: 9px solid #FAB20C; border-radius: 10px;">
+            <p>Aqui você encontrará projetos <br> pessoais e de clientes feito por mim.</p>
+        </div>
+        <div class="ever_projeto">
+            <div class="projeto-card">
+                <img src="img/generator_password.png" alt="">
+                <div class="conteudo">
+                        <h2>Gerador de senha.</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="https://felipecostaq.github.io/generator-passowrd/" target="_blank">Ver projeto</a>
+                </div>
+            </div>
+            <div class="projeto-card">
+                <img src="img/balle_bot.png" alt="">
+                <div class="conteudo">
+                        <h2>Login BalleBot.</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="https://felipecostaq.github.io/Login-Ballebot/" target="_blank">Ver projeto</a>
+                </div>
+            </div>
+            <div class="projeto-card">
+                <img src="img/formulario_cadastro.png" alt="">
+                <div class="conteudo">
+                        <h2>Formulário.</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="https://felipecostaq.github.io/Form.html.css/" target="_blank">Ver projeto</a>
+                </div>
+            </div>
+        </div>
+    </article>
+    <aside class="contato" id="rollcontato">
+        <div class="form_box">
+
+            <h2 class="title">Envie sua mensagem</h2>
+            <form method="post" action="https://api.staticforms.xyz/submit">
+                <input type="text" name="name" placeholder="Seu nome" required>
+                <input type="email" name="email" placeholder="Seu email" required>
+                <input type="text" name="subject" placeholder="Assunto" required>
+                <textarea name="message" placeholder="Digite sua mensagem" required></textarea>
+                <input type="hidden" name="accessKey" value="6d8862ae-f1b7-440f-b605-272f2f9359b2">
+                <input type="hidden" name="redirectTo" value="">
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+
+        </div>
+    </aside>
+    <footer>
+        <div class="social">
+            <h2>© 2024 felipe</h2>
+        </div>
+        <div class="nome">
+            <h1>SOCIAL</h1>
+            <a href="https://github.com/FelipeCostaQ" target="_blank"><img src="img/github.png" alt="github"></a>
+            <a href=""></a>
+        </div>
+    </footer>
+</body>
+</html>
