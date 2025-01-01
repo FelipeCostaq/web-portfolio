@@ -91,6 +91,19 @@
         justify-content: center; 
     }
 
+    .ever_projeto{
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 0px;
+    }
+
+    .sobprojeto h1{
+        margin-top: 250px;
+    }
+
+    .sobprojeto p{
+        display: none;
+    }
     
 
     
