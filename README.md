@@ -1,3 +1,3 @@
 <h1>Web_Portifolio</h1>
-<h2>Host:</h2>
-<p>Netlify</p>
+<h1>Host:</h1>
+<h2>Netlify</h2>
