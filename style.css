@@ -367,7 +367,7 @@ aside{
 .form_box{
     display: flex;
     flex-direction: column;
-    background-color: #ffffff;
+    background-color: #ffffff00;
     border-radius: 8px;
     width: 500px;
 }
