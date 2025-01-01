@@ -303,8 +303,8 @@ aside{
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    width: 300px;
-    margin-top: 250px;
+    max-width: 300px;
+    margin-top: 350px;
     margin-left: 50px;
     transition: transform 0.3s ease;
 }

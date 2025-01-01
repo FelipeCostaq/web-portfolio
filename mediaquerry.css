@@ -1,5 +1,4 @@
 @media (max-width: 999px){
-
     body, html{
         overflow-x: hidden;
         background-color: white;
@@ -149,13 +148,12 @@
     .social{
         display: none;
     }
+
     
 }
 
 @media (maxwidth: 421px){
-    .skills{
-        padding-bottom: 50px;
-    }
+
 
     aside{
         margin-bottom: 50px;
