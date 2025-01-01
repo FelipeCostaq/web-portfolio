@@ -96,7 +96,10 @@
     }
 
     .sm p{
+        display: flex;
+        flex-wrap: wrap;
         font-size: 1rem;
         margin-left: 60px;
+
     }
 }
