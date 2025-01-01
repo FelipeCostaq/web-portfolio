@@ -44,21 +44,8 @@
 
     main{
         flex-direction: column;
+        padding: 20px;
     }
 
 
-
-    .bem-vindo{
-        font-size: 2.7rem;
-    }
-    
-    .texto p{
-        font-size: 1.2rem;
-    }
-
-    .mainimg img{
-        display: none;
-    }
-    
 }
-
