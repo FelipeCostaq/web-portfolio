@@ -131,6 +131,7 @@ main{
     font-family: 'electrolize', sans-serif;
     font-size: 3.9rem;
     color: #407BFF;
+    max-width: 100%;
 }
 
 .texto p{
