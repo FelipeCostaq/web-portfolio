@@ -1,4 +1,4 @@
-@media (max-width: 999px) {
+@media (max-width: 999px) and (min-width: 0px) {
 
     body{
         overflow-x: hidden;
@@ -40,5 +40,30 @@
 
     .links.active{
         transform: translateX(0);
+    }
+
+    main{
+        flex-direction: column;
+    }
+
+
+
+    .bem-vindo{
+        font-size: 2.7rem;
+    }
+    
+    .texto p{
+        font-size: 1.2rem;
+    }
+
+    .mainimg img{
+        display: none;
+    }
+    
+}
+
+@media (max-width: 600px){
+    .mainimg img{
+        display: block;
     }
 }
