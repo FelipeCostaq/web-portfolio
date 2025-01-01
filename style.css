@@ -282,12 +282,20 @@ aside{
 .projetos h1{
     font-family: 'Source Sans 3', sans-serif;
     font-weight: bolder;
-    font-size: 2.4rem;
+    font-size: 2.5rem;
     color: black;
 }
 
 .projetos p{
     text-align: center;
+}
+
+.ever_projeto{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-evenly; 
+    gap: 0px; 
+    padding: 0px;
 }
 
 .projeto-card {

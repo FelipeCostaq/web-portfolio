@@ -97,17 +97,30 @@
         padding-bottom: 0px;
     }
 
-    .sobprojeto h1{
-        margin-top: 250px;
-    }
 
-    .sobprojeto p{
+
+    .sobprojeto{
         display: none;
     }
 
     .contato{
         flex-direction: column; 
         padding: 20px;
+    }
+
+    .projetos{
+        height: auto;
+        justify-content: center; 
+        padding: 20px;
+        margin-right: 30px;
+        
+    }
+
+    
+
+    .project-card {
+        width: 100%; 
+        max-width: 100%;
     }
 
     .form_box {
@@ -137,4 +150,14 @@
         display: none;
     }
     
+}
+
+@media (maxwidth: 421px){
+    .skills{
+        padding-bottom: 50px;
+    }
+
+    aside{
+        margin-bottom: 50px;
+    };
 }
