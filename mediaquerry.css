@@ -68,6 +68,12 @@
 }
 
 @media (max-width: 529px) {
+    main{
+        flex-direction: column;
+         padding: 20px;
+         height: 250px;
+     }
+     
     .bem-vindo {
         font-size: 2.2rem; 
     }
@@ -78,5 +84,14 @@
 
     .mini-text1 p, .mini-text2 p {
         font-size: 1rem; 
+    }
+
+    section span h1{
+        font-size: 2rem;
+    }
+
+    .sm p{
+        font-size: 1rem;
+        margin-left: 60px;
     }
 }
