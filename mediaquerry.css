@@ -1,6 +1,6 @@
 @media (max-width: 999px){
 
-    body{
+    body, html{
         overflow-x: hidden;
         background-color: white;
     }
@@ -47,6 +47,7 @@
        flex-direction: column;
         padding: 20px;
         height: 250px;
+        background-color: white;
     }
 
 
