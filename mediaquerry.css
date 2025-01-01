@@ -1,4 +1,4 @@
-@media (max-width: 999px) and (min-width: 0px) {
+@media (max-width: 999px){
 
     body{
         overflow-x: hidden;
@@ -59,6 +59,10 @@
 
     .texto p {
         font-size: 1.5rem;
+    }
+
+    .mainimg img{
+        display: none;
     }
 }
 
