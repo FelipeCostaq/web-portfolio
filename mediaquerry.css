@@ -62,8 +62,3 @@
     
 }
 
-@media (max-width: 600px){
-    .mainimg img{
-        display: block;
-    }
-}
