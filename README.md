@@ -6,6 +6,7 @@
 <ul>
   <li>HTML5</li>
   <li>CSS3</li>
+  <li>JavaScript</li>
 </ul>
 <h2>Link: </h2>
 <p>https://felipecdeveloper.netlify.app/</p>
