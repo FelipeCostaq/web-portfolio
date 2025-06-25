@@ -5,3 +5,4 @@ mobileMenu.addEventListener('click', () => {
     links.classList.toggle('active');
     mobileMenu.classList.toggle('open');  
 });
+
